@@ -45,7 +45,7 @@
             gap: 10px;
         }
         
-        .cake0, .cake1, .cake2, .cake3, .cake4, .cake5, .cake6, .cake7, .cake8, .cake9, .cake10, .cake11, .cake12, .cake13, .cake14, .cake15, .cake16, .cake17, .cake18, .cake19, .cake20, .cake21, .cake22, .cake23, .cake24, .cake25, .cake26, .cake27, .cake28, .cake29, .cake30, .cake31, .cake32, .cake33, .cake34, .cake35, .cake36, .cake37, .cake38, .cake39 {
+        .cake0, .cake1, .cake2, .cake3, .cake4, .cake5, .cake6, .cake7, .cake8, .cake9, .cake10, .cake11, .cake12, .cake13, .cake14, .cake15, .cake16, .cake17, .cake18, .cake19, .cake20, .cake21, .cake22, .cake23, .cake24, .cake25, .cake26, .cake27, .cake28, .cake29, .cake30, .cake31, .cake32, .cake33, .cake34, .cake35, .cake36, .cake37, .cake38, .cake39, .c, .e, .i, .n, .p, .s, .t {
             position: absolute;
             display: none;
             z-index: 10; /* Ensure it's on top of other content */
@@ -74,15 +74,15 @@
             top: 240px;
             left: 300px;
         }
-        .cake13, .cake16, .cake19, .cake22, .cake25, .cake28, .cake31, .cake34, .cake37 {
+        .cake13, .cake16, .cake19, .c, .cake22, .p, .cake25, .cake28, .cake31, .cake34, .cake37 {
             top: 0;
             left: 75px;
         }
-        .cake14, .cake17, .cake20, .cake23, .cake26, .cake29, .cake32, .cake35, .cake38 {
+        .cake14, .cake17, .cake20, .cake23, .cake26, .cake29, .cake32, .cake35, .i, .cake38 {
             top: 120px;
             left: 0;
         }
-        .cake15, .cake18, .cake21, .cake24, .cake27, .cake30, .cake33, .cake36, .cake39 {
+        .cake15, .t, .cake18, .cake21, .e, .cake24, .cake27, .s, .cake30, .cake33, .n, .cake36, .cake39 {
             top: 120px;
             left: 150px;
         }
@@ -104,6 +104,7 @@
                 <img class="cake13" id="cake13" src="images/cake.webp" height="120px" width="150px">
                 <img class="cake14" id="cake14" src="images/cake.webp" height="120px" width="150px">
                 <img class="cake15" id="cake15" src="images/cake.webp" height="120px" width="150px">
+                <img class="t" id="t" src="text/T.png" height="120px" width="150px">
             </div>
             <div class="container-wrapper2">
                 <div class="container5">
@@ -113,8 +114,10 @@
                 </div>
                 <div class="container6">
                     <img class="cake19" id="cake19" src="images/cake.webp" height="120px" width="150px">
+                    <img class="c" id="c" src="text/C.png" height="120px" width="150px">
                     <img class="cake20" id="cake20" src="images/cake.webp" height="120px" width="150px">
                     <img class="cake21" id="cake21" src="images/cake.webp" height="120px" width="150px">
+                    <img class="e" id="e" src="text/E.png" height="120px" width="150px">
                 </div>
             </div>
         </div>
@@ -126,6 +129,7 @@
                 <img class="cake9" id="cake9" src="images/cake.webp" height="240px" width="300px">
                 <div class="container7">
                     <img class="cake22" id="cake22" src="images/cake.webp" height="120px" width="150px">
+                    <img class="p" id="p" src="text/P.png" height="120px" width="150px">
                     <img class="cake23" id="cake23" src="images/cake.webp" height="120px" width="150px">
                     <img class="cake24" id="cake24" src="images/cake.webp" height="120px" width="150px">
                 </div>
@@ -134,6 +138,7 @@
                         <img class="cake25" id="cake25" src="images/cake.webp" height="120px" width="150px">
                         <img class="cake26" id="cake26" src="images/cake.webp" height="120px" width="150px">
                         <img class="cake27" id="cake27" src="images/cake.webp" height="120px" width="150px">
+                        <img class="s" id="s" src="text/S.png" height="120px" width="150px">
                     </div>
                     <div class="container9">
                         <img class="cake28" id="cake28" src="images/cake.webp" height="120px" width="150px">
@@ -151,11 +156,13 @@
                     <img class="cake31" id="cake31" src="images/cake.webp" height="120px" width="150px">
                     <img class="cake32" id="cake32" src="images/cake.webp" height="120px" width="150px">
                     <img class="cake33" id="cake33" src="images/cake.webp" height="120px" width="150px">
+                    <img class="n" id="n" src="text/N.png" height="120px" width="150px">
                 </div>
                 <div class="container-wrapper4">
                     <div class="container11">
                         <img class="cake34" id="cake34" src="images/cake.webp" height="120px" width="150px">
                         <img class="cake35" id="cake35" src="images/cake.webp" height="120px" width="150px">
+                        <img class="i" id="i" src="text/I.png" height="120px" width="150px">
                         <img class="cake36" id="cake36" src="images/cake.webp" height="120px" width="150px">
                     </div>
                     <div class="container12">
@@ -209,6 +216,13 @@
         let thirtyseventhImage = document.getElementById("cake37");
         let thirtyeighthImage = document.getElementById("cake38");
         let thirtyninthImage = document.getElementById("cake39");
+        let tImage = document.getElementById("t");
+        let cImage = document.getElementById("c");
+        let eImage = document.getElementById("e");
+        let pImage = document.getElementById("p");
+        let sImage = document.getElementById("s");
+        let nImage = document.getElementById("n");
+        let iImage = document.getElementById("i");
 
         zerothImage.addEventListener("click", () => {
             zerothImage.style.display = "none";
@@ -296,6 +310,7 @@
         });
         fifteenthImage.addEventListener("click", () => {
             fifteenthImage.style.display = "none";
+            tImage.style.display = "block";
         });
         sixteenthImage.addEventListener("click", () => {
             sixteenthImage.style.display = "none";
@@ -308,15 +323,18 @@
         });
         nineteenthImage.addEventListener("click", () => {
             nineteenthImage.style.display = "none";
+            cImage.style.display = "block";
         });
         twentiethImage.addEventListener("click", () => {
             twentiethImage.style.display = "none";
         });
         twentyfirstImage.addEventListener("click", () => {
             twentyfirstImage.style.display = "none";
+            eImage.style.display = "block";
         });
         twentysecondImage.addEventListener("click", () => {
             twentysecondImage.style.display = "none";
+            pImage.style.display = "block";
         });
         twentythirdImage.addEventListener("click", () => {
             twentythirdImage.style.display = "none";
@@ -332,6 +350,7 @@
         });
         twentyseventhImage.addEventListener("click", () => {
             twentyseventhImage.style.display = "none";
+            sImage.style.display = "block";
         });
         twentyeighthImage.addEventListener("click", () => {
             twentyeighthImage.style.display = "none";
@@ -350,12 +369,14 @@
         });
         thirtythirdImage.addEventListener("click", () => {
             thirtythirdImage.style.display = "none";
+            nImage.style.display = "block";
         });
         thirtyfourthImage.addEventListener("click", () => {
             thirtyfourthImage.style.display = "none";
         });
         thirtyfifthImage.addEventListener("click", () => {
             thirtyfifthImage.style.display = "none";
+            iImage.style.display = "block";
         });
         thirtysixthImage.addEventListener("click", () => {
             thirtysixthImage.style.display = "none";
