@@ -14,16 +14,19 @@
             padding: 0;
             position: relative;
         }
-        .container1 {
+        .container1, .container4 {
             position: relative;
             width: 600px;
             height: 480px;
             margin: auto auto auto auto;
         }
-        .container-wrapper {
+        .container-wrapper, .container-wrapper2 {
             display: flex;
             justify-content: center;
             gap: 20px; /* Spacing between containers */
+        }
+        .container-wrapper2 {
+            gap: 10px;
         }
         .container2, .container3 {
             position: relative;
@@ -31,7 +34,7 @@
             height: 480px;
         }
         
-        .cake0, .cake1, .cake2, .cake3, .cake4, .cake5, .cake6, .cake7, .cake8, .cake9, .cake10, .cake11, .cake12 {
+        .cake0, .cake1, .cake2, .cake3, .cake4, .cake5, .cake6, .cake7, .cake8, .cake9, .cake10, .cake11, .cake12, .cake13, .cake14, .cake15 {
             position: absolute;
             display: none;
             z-index: 10; /* Ensure it's on top of other content */
@@ -48,15 +51,15 @@
             top: 0;
             left: 0;
         }
-        .cake4, .cake7, .cake10 {
+        .cake4, .cake7, .cake10, .cake13 {
             top: 0;
             left: 150px;
         }
-        .cake5, .cake8, .cake11 {
+        .cake5, .cake8, .cake11, .cake14 {
             top: 240px;
             left: 0;
         }
-        .cake6, .cake9, .cake12 {
+        .cake6, .cake9, .cake12, .cake15 {
             top: 240px;
             left: 300px;
         }
@@ -69,6 +72,11 @@
         <img class="cake4" id="cake4" src="images/cake.webp" height="240px" width="300px">
         <img class="cake5" id="cake5" src="images/cake.webp" height="240px" width="300px">
         <img class="cake6" id="cake6" src="images/cake.webp" height="240px" width="300px">
+        <div class="container4">
+            <img class="cake13" id="cake13" src="images/cake.webp" height="120px" width="150px">
+            <img class="cake14" id="cake14" src="images/cake.webp" height="120px" width="150px">
+            <img class="cake15" id="cake15" src="images/cake.webp" height="120px" width="150px">
+        </div>
     </div>
     <div class="container-wrapper">
         <div class="container2">
@@ -99,6 +107,9 @@
         let tenthImage = document.getElementById("cake10");
         let eleventhImage = document.getElementById("cake11");
         let twelfthImage = document.getElementById("cake12");
+        let thirtheenthImage = document.getElementById("cake13");
+        let fourteenthImage = document.getElementById("cake14");
+        let fifteenthImage = document.getElementById("cake15");
 
         zerothImage.addEventListener("click", () => {
             zerothImage.style.display = "none";
@@ -126,6 +137,12 @@
             tenthImage.style.display = "block";
             eleventhImage.style.display = "block";
             twelfthImage.style.display = "block";
+        });
+        fourthImage.addEventListener("click", () => {
+            fourthImage.style.display = "none";
+            thirteenthImage.style.display = "block";
+            fourteenthImage.style.display = "block";
+            fifteenthImage.style.display = "block";
         });
     </script>
 </body>
