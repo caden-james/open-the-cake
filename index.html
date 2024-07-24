@@ -11,23 +11,16 @@
             background-image: url('images/space2.jpg');
             background-size: cover;
         }
-        .container1 {
-            position: relative;
-            width: 600px;
-            height: 480px;
-            margin: 100px auto 0;
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        .container2 {
+        .container1, .container2, .container3 {
             position: relative;
             width: 600px;
             height: 480px;
-            margin: 0 auto 0 150px;
-        }
-        .container3 {
-            position: relative;
-            width: 600px;
-            height: 480px;
-            margin: 0 150px 0 auto;
+            margin: 0 20px;
         }
         .cake1, .cake2, .cake3, .cake4, .cake5, .cake6, .cake7, .cake8, .cake9, .cake10, .cake11, .cake12 {
             position: absolute;
@@ -53,23 +46,25 @@
     </style>
 </head>
 <body>
-    <div class="container1">
-        <img class="cake1" id="cake1" src="images/cake.webp" height="480px" width="600px">
-        <img class="cake4" id="cake4" src="images/cake.webp" height="240px" width="300px">
-        <img class="cake5" id="cake5" src="images/cake.webp" height="240px" width="300px">
-        <img class="cake6" id="cake6" src="images/cake.webp" height="240px" width="300px">
-    </div>
-    <div class="container2">
-        <img class="cake2" id="cake2" src="images/cake.webp" height="480px" width="600px">
-        <img class="cake7" id="cake7" src="images/cake.webp" height="240px" width="300px">
-        <img class="cake8" id="cake8" src="images/cake.webp" height="240px" width="300px">
-        <img class="cake9" id="cake9" src="images/cake.webp" height="240px" width="300px">
-    </div>
-    <div class="container3">
-        <img class="cake3" id="cake3" src="images/cake.webp" height="480px" width="600px">
-        <img class="cake10" id="cake10" src="images/cake.webp" height="240px" width="300px">
-        <img class="cake11" id="cake11" src="images/cake.webp" height="240px" width="300px">
-        <img class="cake12" id="cake12" src="images/cake.webp" height="240px" width="300px">
+    <div class="container">
+        <div class="container1">
+            <img class="cake1" id="cake1" src="images/cake.webp" height="480px" width="600px">
+            <img class="cake4" id="cake4" src="images/cake.webp" height="240px" width="300px">
+            <img class="cake5" id="cake5" src="images/cake.webp" height="240px" width="300px">
+            <img class="cake6" id="cake6" src="images/cake.webp" height="240px" width="300px">
+        </div>
+        <div class="container2">
+            <img class="cake2" id="cake2" src="images/cake.webp" height="480px" width="600px">
+            <img class="cake7" id="cake7" src="images/cake.webp" height="240px" width="300px">
+            <img class="cake8" id="cake8" src="images/cake.webp" height="240px" width="300px">
+            <img class="cake9" id="cake9" src="images/cake.webp" height="240px" width="300px">
+        </div>
+        <div class="container3">
+            <img class="cake3" id="cake3" src="images/cake.webp" height="480px" width="600px">
+            <img class="cake10" id="cake10" src="images/cake.webp" height="240px" width="300px">
+            <img class="cake11" id="cake11" src="images/cake.webp" height="240px" width="300px">
+            <img class="cake12" id="cake12" src="images/cake.webp" height="240px" width="300px">
+        </div>
     </div>
 
     <script text="javascript">
@@ -85,18 +80,21 @@
         let tenthImage = document.getElementById("cake10");
         let eleventhImage = document.getElementById("cake11");
         let twelfthImage = document.getElementById("cake12");
+
         firstImage.addEventListener("click", () => {
             firstImage.style.display = "none";
             fourthImage.style.display = "block";
             fifthImage.style.display = "block";
             sixthImage.style.display = "block";
         });
+
         secondImage.addEventListener("click", () => {
             secondImage.style.display = "none";
             seventhImage.style.display = "block";
             eighthImage.style.display = "block";
             ninthImage.style.display = "block";
         });
+
         thirdImage.addEventListener("click", () => {
             thirdImage.style.display = "none";
             tenthImage.style.display = "block";
