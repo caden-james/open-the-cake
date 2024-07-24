@@ -14,21 +14,38 @@
             padding: 0;
             position: relative;
         }
-        .container1 {
-            position: relative;
-            width: 600px;
-            height: 480px;
-            margin: 100px auto 0; /* Centered and positioned at the top */
-        }
         .container-wrapper {
             display: flex;
-            justify-content: center;
+            justify-content: center; /* Center containers horizontally */
             gap: 20px; /* Spacing between containers */
-        }
-        .container2, .container3 {
             position: relative;
+        }
+        
+        .container1, .container2, .container3 {
             width: 600px;
             height: 480px;
+            display: flex;
+            justify-content: center; /* Center content horizontally within containers */
+            align-items: center; /* Center content vertically within containers */
+        }
+        
+        .cake0 {
+            display: block;
+            width: 1200px;
+            height: 960px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10; /* Ensure it's on top of other content */
+        }
+        
+        /* Adjust the images inside containers to fit the container dimensions */
+        .container1 img,
+        .container2 img,
+        .container3 img {
+            max-width: 100%;
+            max-height: 100%;
         }
         .cake0, .cake1, .cake2, .cake3, .cake4, .cake5, .cake6, .cake7, .cake8, .cake9, .cake10, .cake11, .cake12 {
             position: absolute;
