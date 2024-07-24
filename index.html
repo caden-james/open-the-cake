@@ -175,6 +175,10 @@
         </div>
     </div>
 
+    <audio id="openthecake">
+        <source src="audio/openthecake.mp3" type="audio/mpeg">
+    </audio>
+
     <script text="javascript">
         let zerothImage = document.getElementById("cake0");
         let firstImage = document.getElementById("cake1");
@@ -226,6 +230,7 @@
         let openthecake = document.getElementById("openthecake");
 
         zerothImage.addEventListener("click", () => {
+            openthecake.play();
             zerothImage.style.display = "none";
             firstImage.style.display = "block";
             secondImage.style.display = "block";
@@ -392,8 +397,5 @@
             thirtyninthImage.style.display = "none";
         });
     </script>
-    <audio id="openthecake">
-        <source src="audio/openthecake.mp3" type="audio/mpeg">
-    </audio>
 </body>
 </html>
