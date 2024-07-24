@@ -11,53 +11,97 @@
             background-image: url('images/space2.jpg');
             background-size: cover;
         }
-        .container {
+        .container1 {
             position: relative;
             width: 600px;
             height: 480px;
             margin: 100px auto 0;
         }
-        .cake1, .cake4, .cake5, .cake6 {
+        .container2 {
+            position: relative;
+            width: 600px;
+            height: 480px;
+            margin: 800px auto 0 150px;
+        }
+        .container3 {
+            position: relative;
+            width: 600px;
+            height: 480px;
+            margin: 800px 150px 0 auto;
+        }
+        .cake1, .cake2, .cake3, .cake4, .cake5, .cake6, .cake7, .cake8, .cake9, .cake10, .cake11, .cake12 {
             position: absolute;
             display: none;
         }
-        .cake1 {
+        .cake1, .cake2, .cake3 {
             display: block;
             top: 0;
             left: 0;
         }
-        .cake4 {
+        .cake4, .cake7, .cake10 {
             top: 0;
             left: 150px;
         }
-        .cake5 {
+        .cake5, .cake8, .cake11 {
             top: 240px;
             left: 0;
         }
-        .cake6 {
+        .cake6, .cake9, .cake12 {
             top: 240px;
             left: 300px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container1">
         <img class="cake1" id="cake1" src="images/cake.webp" height="480px" width="600px">
         <img class="cake4" id="cake4" src="images/cake.webp" height="240px" width="300px">
         <img class="cake5" id="cake5" src="images/cake.webp" height="240px" width="300px">
         <img class="cake6" id="cake6" src="images/cake.webp" height="240px" width="300px">
     </div>
+    <div class="container2">
+        <img class="cake1" id="cake2" src="images/cake.webp" height="480px" width="600px">
+        <img class="cake4" id="cake7" src="images/cake.webp" height="240px" width="300px">
+        <img class="cake5" id="cake8" src="images/cake.webp" height="240px" width="300px">
+        <img class="cake6" id="cake9" src="images/cake.webp" height="240px" width="300px">
+    </div>
+    <div class="container3">
+        <img class="cake1" id="cake3" src="images/cake.webp" height="480px" width="600px">
+        <img class="cake4" id="cake10" src="images/cake.webp" height="240px" width="300px">
+        <img class="cake5" id="cake11" src="images/cake.webp" height="240px" width="300px">
+        <img class="cake6" id="cake12" src="images/cake.webp" height="240px" width="300px">
+    </div>
 
     <script text="javascript">
         let firstImage = document.getElementById("cake1");
+        let secondImage = document.getElementById("cake2");
+        let thirdImage = document.getElementById("cake3");
         let fourthImage = document.getElementById("cake4");
         let fifthImage = document.getElementById("cake5");
         let sixthImage = document.getElementById("cake6");
+        let seventhImage = document.getElementById("cake7");
+        let eighthImage = document.getElementById("cake8");
+        let ninthImage = document.getElementById("cake9");
+        let tenthImage = document.getElementById("cake10");
+        let eleventhImage = document.getElementById("cake11");
+        let twelftIhmage = document.getElementById("cake12");
         firstImage.addEventListener("click", () => {
             firstImage.style.display = "none";
             fourthImage.style.display = "block";
             fifthImage.style.display = "block";
             sixthImage.style.display = "block";
+        });
+        firstImage.addEventListener("click", () => {
+            secondthImage.style.display = "none";
+            seventhImage.style.display = "block";
+            eighthImage.style.display = "block";
+            ninthImage.style.display = "block";
+        });
+        firstImage.addEventListener("click", () => {
+            thirdImage.style.display = "none";
+            tenthImage.style.display = "block";
+            eleventhImage.style.display = "block";
+            twelfthImage.style.display = "block";
         });
     </script>
 </body>
