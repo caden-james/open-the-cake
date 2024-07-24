@@ -18,15 +18,43 @@
             margin-right: auto;
             margin-top: 120px;
         }
+        .cake4 {
+            display: none;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 150px;
+        }
+        .cake5 {
+            display: none;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 180px;
+        }
+        .cake6 {
+            display: none;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 210px;
+        }
     </style>
 
     <body>
         <img class= "cake1" id="cake1" src="images/cake.webp" height="480px" width="600px" >
+        <img class= "cake4" id="cake4" src="images/cake.webp" height="160px" width="200px" >
+        <img class= "cake5" id="cake5" src="images/cake.webp" height="160px" width="200px" >
+        <img class= "cake6" id="cake6" src="images/cake.webp" height="160px" width="200px" >
+        
         
         <script text="javascript">
             let firstImage = document.getElementById("cake1");
+            let fourthImage = document.getElementById("cake4");
+            let fifthImage = document.getElementById("cake5");
+            let sixthImage = document.getElementById("cake6");
             firstImage.addEventListener("click", () => {
                 firstImage.style.display = "none";
+                fourthImage.style.display = "block";
+                fifthImage.style.display = "block";
+                sixthImage.style.display = "block";
             });
         </script>
     </body>
