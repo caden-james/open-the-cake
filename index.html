@@ -400,6 +400,8 @@
             sixteenthImage.style.display = "none";
             cImage.style.display = "block";
             let audio = new Audio('audio/C.mp3');
+            audio.pause();
+            audio.currentTime = 0;
             audio.play();
         });
         seventeenthImage.addEventListener("click", () => {
