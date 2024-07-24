@@ -22,5 +22,12 @@
 
     <body>
         <img class= "cake1" id="cake1" src="images/cake.webp" height="480px" width="600px" >
+        
+        <script text="javascript">
+            let firstImage = document.getElementById("cake1");
+            firstImage.addEventListener("click", () => {
+                firstImage.remove();
+            });
+        </script>
     </body>
 </HTML>
