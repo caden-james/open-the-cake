@@ -227,10 +227,10 @@
         let sImage = document.getElementById("s");
         let nImage = document.getElementById("n");
         let iImage = document.getElementById("i");
-        let openthecake = document.getElementById("openthecake");
 
         zerothImage.addEventListener("click", () => {
-            openthecake.play();
+            let audio = new Audio('audio/openthecake.mp3');
+            audio.play();
             zerothImage.style.display = "none";
             firstImage.style.display = "block";
             secondImage.style.display = "block";
