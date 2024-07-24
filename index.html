@@ -20,7 +20,7 @@
             height: 480px;
             margin: auto auto auto auto;
         }
-        .container4 {
+        .container4, .container7, .container10 {
             position: relative;
             width: 300px;
             height: 240px;
@@ -40,7 +40,7 @@
             height: 480px;
         }
         
-        .cake0, .cake1, .cake2, .cake3, .cake4, .cake5, .cake6, .cake7, .cake8, .cake9, .cake10, .cake11, .cake12, .cake13, .cake14, .cake15 {
+        .cake0, .cake1, .cake2, .cake3, .cake4, .cake5, .cake6, .cake7, .cake8, .cake9, .cake10, .cake11, .cake12, .cake13, .cake14, .cake15, .cake16, .cake17, .cake18, .cake19, .cake20, .cake21 {
             position: absolute;
             display: none;
             z-index: 10; /* Ensure it's on top of other content */
@@ -69,15 +69,15 @@
             top: 240px;
             left: 300px;
         }
-        .cake13 {
+        .cake13, .cake16, .cake19 {
             top: 0;
             left: 75px;
         }
-        .cake14 {
+        .cake14, .cake17, .cake20 {
             top: 120px;
             left: 0;
         }
-        .cake15 {
+        .cake15, .cake18, .cake21 {
             top: 120px;
             left: 150px;
         }
@@ -102,12 +102,22 @@
             <img class="cake7" id="cake7" src="images/cake.webp" height="240px" width="300px">
             <img class="cake8" id="cake8" src="images/cake.webp" height="240px" width="300px">
             <img class="cake9" id="cake9" src="images/cake.webp" height="240px" width="300px">
+            <div class="container4">
+                <img class="cake16" id="cake16" src="images/cake.webp" height="120px" width="150px">
+                <img class="cake17" id="cake17" src="images/cake.webp" height="120px" width="150px">
+                <img class="cake18" id="cake18" src="images/cake.webp" height="120px" width="150px">
+            </div>
         </div>
         <div class="container3">
             <img class="cake3" id="cake3" src="images/cake.webp" height="480px" width="600px">
             <img class="cake10" id="cake10" src="images/cake.webp" height="240px" width="300px">
             <img class="cake11" id="cake11" src="images/cake.webp" height="240px" width="300px">
             <img class="cake12" id="cake12" src="images/cake.webp" height="240px" width="300px">
+            <div class="container4">
+                <img class="cake16" id="cake16" src="images/cake.webp" height="120px" width="150px">
+                <img class="cake17" id="cake17" src="images/cake.webp" height="120px" width="150px">
+                <img class="cake18" id="cake18" src="images/cake.webp" height="120px" width="150px">
+        </div>
         </div>
     </div>
 
@@ -128,6 +138,12 @@
         let thirteenthImage = document.getElementById("cake13");
         let fourteenthImage = document.getElementById("cake14");
         let fifteenthImage = document.getElementById("cake15");
+        let sixteenthImage = document.getElementById("cake16");
+        let seventeenthImage = document.getElementById("cake17");
+        let eighteenthImage = document.getElementById("cake18");
+        let nineteenthImage = document.getElementById("cake19");
+        let twentiethImage = document.getElementById("cake20");
+        let twentyfirstImage = document.getElementById("cake21")
 
         zerothImage.addEventListener("click", () => {
             zerothImage.style.display = "none";
@@ -161,6 +177,18 @@
             thirteenthImage.style.display = "block";
             fourteenthImage.style.display = "block";
             fifteenthImage.style.display = "block";
+        });
+        seventhImage.addEventListener("click", () => {
+            seventhImage.style.display = "none";
+            sixteenthImage.style.display = "block";
+            seventeenthImage.style.display = "block";
+            eighteenthImage.style.display = "block";
+        });
+         tenthImage.addEventListener("click", () => {
+            tenthImage.style.display = "none";
+            nineteenthImage.style.display = "block";
+            twentiethImage.style.display = "block";
+            twentyfirstImage.style.display = "block";
         });
     </script>
 </body>
