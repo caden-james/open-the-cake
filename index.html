@@ -6,39 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="openthecake.css">
     <title>SURPRISE!!</title>
-    <style> 
-        body {    
+    <style>
+        body {
             background-image: url('images/space2.jpg');
             background-size: cover;
             margin: 0;
             padding: 0;
             position: relative;
         }
-        .container1 {
-            position: relative;
-            width: 600px;
-            height: 480px;
-            margin: auto auto auto auto;
-        }
         .container-wrapper {
             display: flex;
             justify-content: center;
             gap: 20px; /* Spacing between containers */
+            flex-wrap: wrap;
+            position: relative;
         }
-        .container2, .container3 {
+        .container1, .container2, .container3 {
             position: relative;
             width: 600px;
             height: 480px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
         }
-        
-        /* Adjust the images inside containers to fit the container dimensions */
+        .container4, .container5, .container6, .container7, .container8, .container9 {
+            position: relative;
+            width: 300px;
+            height: 240px;
+        }
         .container1 img,
         .container2 img,
-        .container3 img {
+        .container3 img,
+        .container4 img,
+        .container5 img,
+        .container6 img,
+        .container7 img,
+        .container8 img,
+        .container9 img {
             max-width: 100%;
             max-height: 100%;
         }
-        .cake0, .cake1, .cake2, .cake3, .cake4, .cake5, .cake6, .cake7, .cake8, .cake9, .cake10, .cake11, .cake12 {
+        .cake0, .cake1, .cake2, .cake3, .cake4, .cake5, .cake6, .cake7, .cake8, .cake9, .cake10, .cake11, .cake12,
+        .cake13, .cake14, .cake15, .cake16, .cake17, .cake18, .cake19, .cake20, .cake21, .cake22, .cake23, .cake24, .cake25, .cake26 {
             position: absolute;
             display: none;
             z-index: 10; /* Ensure it's on top of other content */
@@ -51,44 +60,81 @@
             height: 960px;
             transform: translate(-50%, -50%);
         }
-        .cake1, .cake2, .cake3 {
+        .container1, .container2, .container3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .container1 { /* Adjust positioning for the next level of cakes */
             top: 0;
             left: 0;
         }
-        .cake4, .cake7, .cake10 {
+        .container2 { /* Position containers horizontally */
             top: 0;
             left: 150px;
         }
-        .cake5, .cake8, .cake11 {
+        .container3 { /* Position containers horizontally */
             top: 240px;
             left: 0;
         }
-        .cake6, .cake9, .cake12 {
-            top: 240px;
-            left: 300px;
-        }
+        /* Position for 3x3 cake containers */
+        .container4 { top: 0; left: 0; }
+        .container5 { top: 0; left: 150px; }
+        .container6 { top: 0; left: 300px; }
+        .container7 { top: 240px; left: 0; }
+        .container8 { top: 240px; left: 150px; }
+        .container9 { top: 240px; left: 300px; }
     </style>
 </head>
 <body>
     <img class="cake0" id="cake0" src="images/cake.webp">
     <div class="container1">
-        <img class="cake1" id="cake1" src="images/cake.webp" height="480px" width="600px">
-        <img class="cake4" id="cake4" src="images/cake.webp" height="240px" width="300px">
-        <img class="cake5" id="cake5" src="images/cake.webp" height="240px" width="300px">
-        <img class="cake6" id="cake6" src="images/cake.webp" height="240px" width="300px">
+        <div class="container4">
+            <img class="cake1" id="cake1" src="images/cake.webp">
+            <img class="cake4" id="cake4" src="images/cake.webp">
+            <img class="cake5" id="cake5" src="images/cake.webp">
+        </div>
+        <div class="container5">
+            <img class="cake2" id="cake2" src="images/cake.webp">
+            <img class="cake7" id="cake7" src="images/cake.webp">
+            <img class="cake8" id="cake8" src="images/cake.webp">
+        </div>
+        <div class="container6">
+            <img class="cake3" id="cake3" src="images/cake.webp">
+            <img class="cake10" id="cake10" src="images/cake.webp">
+            <img class="cake11" id="cake11" src="images/cake.webp">
+        </div>
     </div>
     <div class="container-wrapper">
         <div class="container2">
-            <img class="cake2" id="cake2" src="images/cake.webp" height="480px" width="600px">
-            <img class="cake7" id="cake7" src="images/cake.webp" height="240px" width="300px">
-            <img class="cake8" id="cake8" src="images/cake.webp" height="240px" width="300px">
-            <img class="cake9" id="cake9" src="images/cake.webp" height="240px" width="300px">
+            <div class="container7">
+                <img class="cake12" id="cake12" src="images/cake.webp">
+                <img class="cake13" id="cake13" src="images/cake.webp">
+                <img class="cake14" id="cake14" src="images/cake.webp">
+            </div>
+            <div class="container8">
+                <img class="cake15" id="cake15" src="images/cake.webp">
+                <img class="cake16" id="cake16" src="images/cake.webp">
+                <img class="cake17" id="cake17" src="images/cake.webp">
+            </div>
+            <div class="container9">
+                <img class="cake18" id="cake18" src="images/cake.webp">
+                <img class="cake19" id="cake19" src="images/cake.webp">
+                <img class="cake20" id="cake20" src="images/cake.webp">
+            </div>
         </div>
         <div class="container3">
-            <img class="cake3" id="cake3" src="images/cake.webp" height="480px" width="600px">
-            <img class="cake10" id="cake10" src="images/cake.webp" height="240px" width="300px">
-            <img class="cake11" id="cake11" src="images/cake.webp" height="240px" width="300px">
-            <img class="cake12" id="cake12" src="images/cake.webp" height="240px" width="300px">
+            <div class="container4">
+                <img class="cake21" id="cake21" src="images/cake.webp">
+                <img class="cake22" id="cake22" src="images/cake.webp">
+                <img class="cake23" id="cake23" src="images/cake.webp">
+            </div>
+            <div class="container5">
+                <img class="cake24" id="cake24" src="images/cake.webp">
+                <img class="cake25" id="cake25" src="images/cake.webp">
+                <img class="cake26" id="cake26" src="images/cake.webp">
+            </div>
         </div>
     </div>
 
@@ -106,6 +152,20 @@
         let tenthImage = document.getElementById("cake10");
         let eleventhImage = document.getElementById("cake11");
         let twelfthImage = document.getElementById("cake12");
+        let thirteenthImage = document.getElementById("cake13");
+        let fourteenthImage = document.getElementById("cake14");
+        let fifteenthImage = document.getElementById("cake15");
+        let sixteenthImage = document.getElementById("cake16");
+        let seventeenthImage = document.getElementById("cake17");
+        let eighteenthImage = document.getElementById("cake18");
+        let nineteenthImage = document.getElementById("cake19");
+        let twentiethImage = document.getElementById("cake20");
+        let twentyFirstImage = document.getElementById("cake21");
+        let twentySecondImage = document.getElementById("cake22");
+        let twentyThirdImage = document.getElementById("cake23");
+        let twentyFourthImage = document.getElementById("cake24");
+        let twentyFifthImage = document.getElementById("cake25");
+        let twentySixthImage = document.getElementById("cake26");
 
         zerothImage.addEventListener("click", () => {
             zerothImage.style.display = "none";
@@ -133,6 +193,46 @@
             tenthImage.style.display = "block";
             eleventhImage.style.display = "block";
             twelfthImage.style.display = "block";
+        });
+
+        fourthImage.addEventListener("click", () => {
+            fourthImage.style.display = "none";
+            thirteenthImage.style.display = "block";
+            fourteenthImage.style.display = "block";
+            fifteenthImage.style.display = "block";
+        });
+
+        fifthImage.addEventListener("click", () => {
+            fifthImage.style.display = "none";
+            sixteenthImage.style.display = "block";
+            seventeenthImage.style.display = "block";
+            eighteenthImage.style.display = "block";
+        });
+
+        sixthImage.addEventListener("click", () => {
+            sixthImage.style.display = "none";
+            nineteenthImage.style.display = "block";
+            twentiethImage.style.display = "block";
+            twentyFirstImage.style.display = "block";
+        });
+
+        seventhImage.addEventListener("click", () => {
+            seventhImage.style.display = "none";
+            twentySecondImage.style.display = "block";
+            twentyThirdImage.style.display = "block";
+            twentyFourthImage.style.display = "block";
+        });
+
+        eighthImage.addEventListener("click", () => {
+            eighthImage.style.display = "none";
+            twentyFifthImage.style.display = "block";
+            twentySixthImage.style.display = "block";
+        });
+
+        ninthImage.addEventListener("click", () => {
+            ninthImage.style.display = "none";
+            twentyFirstImage.style.display = "block";
+            twentySecondImage.style.display = "block";
         });
     </script>
 </body>
