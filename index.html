@@ -38,11 +38,11 @@
         }
         .cake0 {
             position: absolute;
-            top: 50%;
-            left: 50%;
             width: 1200px; /* Width of cake0 */
             height: 860px; /* Height of cake0 */
-            transform: translate(-50%, -50%); /* Center cake0 using transform */
+            top: calc(50% - 430px); /* (Viewport height / 2) - (cake0 height / 2) */
+            left: calc(50% - 600px); /* (Viewport width / 2) - (cake0 width / 2) */
+            display: block;
             display: block;
         }
         .cake1, .cake2, .cake3 {
