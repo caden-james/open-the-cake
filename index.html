@@ -223,8 +223,10 @@
         let sImage = document.getElementById("s");
         let nImage = document.getElementById("n");
         let iImage = document.getElementById("i");
+        let openthecake = documnet.getElementById("openthecake");
 
         zerothImage.addEventListener("click", () => {
+            openthecake.play();
             zerothImage.style.display = "none";
             firstImage.style.display = "block";
             secondImage.style.display = "block";
@@ -391,5 +393,8 @@
             thirtyninthImage.style.display = "none";
         });
     </script>
+    <audio id="openthecake">
+        <source src="audio/open the cake.mp3" type="audio/mpeg">
+    </audio>
 </body>
 </html>
