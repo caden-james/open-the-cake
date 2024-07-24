@@ -13,9 +13,13 @@
         }
         .container {
             position: relative;
-            width: 900px; /* Adjusted width for more cakes */
-            height: 600px; /* Adjusted height for more cakes */
-            margin: 100px auto 0; /* 100px margin from the top of the page */
+            margin: 100px auto;
+        }
+        .cake-container {
+            position: relative;
+            display: inline-block;
+            width: 300px;
+            height: 300px;
         }
         .cake1, .cake2, .cake3, .cake4, .cake5, .cake6, .cake7, .cake8, .cake9, .cake10, .cake11, .cake12 {
             position: absolute;
@@ -26,109 +30,113 @@
         }
         .cake1 {
             top: 0;
-            left: 300px; /* Centered horizontally */
+            left: 50%;
+            transform: translateX(-50%);
         }
         .cake2 {
-            top: 240px;
+            top: 150px;
             left: 0;
         }
         .cake3 {
-            top: 240px;
-            left: 600px;
+            top: 150px;
+            left: 300px;
         }
         .cake4, .cake5, .cake6 {
             top: 0;
         }
         .cake4 {
-            left: 200px;
+            left: 0;
         }
         .cake5 {
-            left: 450px;
+            left: 150px;
         }
         .cake6 {
-            left: 700px;
+            left: 300px;
         }
         .cake7, .cake8, .cake9 {
-            top: 240px;
+            top: 0;
         }
         .cake7 {
-            left: 200px;
+            left: 0;
         }
         .cake8 {
-            left: 450px;
+            left: 150px;
         }
         .cake9 {
-            left: 700px;
+            left: 300px;
         }
         .cake10, .cake11, .cake12 {
-            top: 480px;
+            top: 0;
         }
         .cake10 {
-            left: 200px;
+            left: 0;
         }
         .cake11 {
-            left: 450px;
+            left: 150px;
         }
         .cake12 {
-            left: 700px;
+            left: 300px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img class="cake1" id="cake1" src="images/cake1.webp" height="240px" width="300px">
-        <img class="cake2" id="cake2" src="images/cake2.webp" height="240px" width="300px">
-        <img class="cake3" id="cake3" src="images/cake3.webp" height="240px" width="300px">
-        
-        <img class="cake4" id="cake4" src="images/cake4.webp" height="240px" width="300px">
-        <img class="cake5" id="cake5" src="images/cake5.webp" height="240px" width="300px">
-        <img class="cake6" id="cake6" src="images/cake6.webp" height="240px" width="300px">
-        
-        <img class="cake7" id="cake7" src="images/cake7.webp" height="240px" width="300px">
-        <img class="cake8" id="cake8" src="images/cake8.webp" height="240px" width="300px">
-        <img class="cake9" id="cake9" src="images/cake9.webp" height="240px" width="300px">
-        
-        <img class="cake10" id="cake10" src="images/cake10.webp" height="240px" width="300px">
-        <img class="cake11" id="cake11" src="images/cake11.webp" height="240px" width="300px">
-        <img class="cake12" id="cake12" src="images/cake12.webp" height="240px" width="300px">
+        <div class="cake-container" id="container1">
+            <img class="cake1" id="cake1" src="images/cake1.webp" height="300px" width="300px">
+            <img class="cake4" id="cake4" src="images/cake4.webp" height="100px" width="100px">
+            <img class="cake5" id="cake5" src="images/cake5.webp" height="100px" width="100px">
+            <img class="cake6" id="cake6" src="images/cake6.webp" height="100px" width="100px">
+        </div>
+        <div class="cake-container" id="container2">
+            <img class="cake2" id="cake2" src="images/cake2.webp" height="300px" width="300px">
+            <img class="cake7" id="cake7" src="images/cake7.webp" height="100px" width="100px">
+            <img class="cake8" id="cake8" src="images/cake8.webp" height="100px" width="100px">
+            <img class="cake9" id="cake9" src="images/cake9.webp" height="100px" width="100px">
+        </div>
+        <div class="cake-container" id="container3">
+            <img class="cake3" id="cake3" src="images/cake3.webp" height="300px" width="300px">
+            <img class="cake10" id="cake10" src="images/cake10.webp" height="100px" width="100px">
+            <img class="cake11" id="cake11" src="images/cake11.webp" height="100px" width="100px">
+            <img class="cake12" id="cake12" src="images/cake12.webp" height="100px" width="100px">
+        </div>
     </div>
 
     <script text="javascript">
-        let firstImage = document.getElementById("cake1");
-        let secondImage = document.getElementById("cake2");
-        let thirdImage = document.getElementById("cake3");
+        let cake1 = document.getElementById("cake1");
+        let cake2 = document.getElementById("cake2");
+        let cake3 = document.getElementById("cake3");
 
-        let fourthImage = document.getElementById("cake4");
-        let fifthImage = document.getElementById("cake5");
-        let sixthImage = document.getElementById("cake6");
-        
-        let seventhImage = document.getElementById("cake7");
-        let eighthImage = document.getElementById("cake8");
-        let ninthImage = document.getElementById("cake9");
-        
-        let tenthImage = document.getElementById("cake10");
-        let eleventhImage = document.getElementById("cake11");
-        let twelfthImage = document.getElementById("cake12");
+        let cake4 = document.getElementById("cake4");
+        let cake5 = document.getElementById("cake5");
+        let cake6 = document.getElementById("cake6");
 
-        firstImage.addEventListener("click", () => {
-            firstImage.style.display = "none";
-            fourthImage.style.display = "block";
-            fifthImage.style.display = "block";
-            sixthImage.style.display = "block";
+        let cake7 = document.getElementById("cake7");
+        let cake8 = document.getElementById("cake8");
+        let cake9 = document.getElementById("cake9");
+
+        let cake10 = document.getElementById("cake10");
+        let cake11 = document.getElementById("cake11");
+        let cake12 = document.getElementById("cake12");
+
+        cake1.addEventListener("click", () => {
+            cake1.style.display = "none";
+            cake4.style.display = "block";
+            cake5.style.display = "block";
+            cake6.style.display = "block";
         });
 
-        secondImage.addEventListener("click", () => {
-            secondImage.style.display = "none";
-            seventhImage.style.display = "block";
-            eighthImage.style.display = "block";
-            ninthImage.style.display = "block";
+        cake2.addEventListener("click", () => {
+            cake2.style.display = "none";
+            cake7.style.display = "block";
+            cake8.style.display = "block";
+            cake9.style.display = "block";
         });
 
-        thirdImage.addEventListener("click", () => {
-            thirdImage.style.display = "none";
-            tenthImage.style.display = "block";
-            eleventhImage.style.display = "block";
-            twelfthImage.style.display = "block";
+        cake3.addEventListener("click", () => {
+            cake3.style.display = "none";
+            cake10.style.display = "block";
+            cake11.style.display = "block";
+            cake12.style.display = "block";
         });
     </script>
 </body>
