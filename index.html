@@ -12,7 +12,8 @@
             background-size: cover;
             margin: 0;
             padding: 0;
-            overflow: hidden; /* Optional: to hide scrollbars if the image exceeds viewport */
+            position: relative;
+            height: 100vh; /* Ensure the body takes up the full viewport height */
         }
         .container1 {
             position: relative;
@@ -33,9 +34,10 @@
         .cake0, .cake1, .cake2, .cake3, .cake4, .cake5, .cake6, .cake7, .cake8, .cake9, .cake10, .cake11, .cake12 {
             position: absolute;
             display: none;
+            z-index: 10; /* Ensure it's on top of other content */
         }
         .cake0 {
-            display: block;
+            position: absolute;
             top: 50%;
             left: 50%;
             width: 1200px;
