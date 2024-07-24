@@ -1,61 +1,64 @@
-<HTML>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="openthecake.css">
-        <title>SURPRISE!!</title>
-    </head>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="openthecake.css">
+    <title>SURPRISE!!</title>
     <style> 
         body {    
             background-image: url('images/space2.jpg');
             background-size: cover;
         }
+        .container {
+            position: relative;
+            width: 600px;
+            height: 480px;
+            margin: 0 auto;
+        }
+        .cake1, .cake4, .cake5, .cake6 {
+            position: absolute;
+            display: none;
+        }
         .cake1 {
             display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 120px;
+            top: 0;
+            left: 0;
         }
         .cake4 {
-            display: none;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 120px;
+            top: 0;
+            left: 150px; /* Centered horizontally */
         }
         .cake5 {
-            display: none;
-            margin-left: 75%;
-            margin-right: auto;
-            position: relative;
+            top: 240px;
+            left: 0;
         }
         .cake6 {
-            display: none;
-            margin-left: auto;
-            margin-right: 75%;
-            position: relative;
+            top: 240px;
+            left: 300px;
         }
     </style>
+</head>
+<body>
+    <div class="container">
+        <img class="cake1" id="cake1" src="images/cake.webp" height="480px" width="600px">
+        <img class="cake4" id="cake4" src="images/cake.webp" height="240px" width="300px">
+        <img class="cake5" id="cake5" src="images/cake.webp" height="240px" width="300px">
+        <img class="cake6" id="cake6" src="images/cake.webp" height="240px" width="300px">
+    </div>
 
-    <body>
-        <img class= "cake1" id="cake1" src="images/cake.webp" height="480px" width="600px" >
-        <img class= "cake4" id="cake4" src="images/cake.webp" height="240px" width="300px" >
-        <img class= "cake5" id="cake5" src="images/cake.webp" height="240px" width="300px" >
-        <img class= "cake6" id="cake6" src="images/cake.webp" height="240px" width="300px" >
-        
-        
-        <script text="javascript">
-            let firstImage = document.getElementById("cake1");
-            let fourthImage = document.getElementById("cake4");
-            let fifthImage = document.getElementById("cake5");
-            let sixthImage = document.getElementById("cake6");
-            firstImage.addEventListener("click", () => {
-                firstImage.style.display = "none";
-                fourthImage.style.display = "block";
-                fifthImage.style.display = "block";
-                sixthImage.style.display = "block";
-            });
-        </script>
-    </body>
-</HTML>
+    <script text="javascript">
+        let firstImage = document.getElementById("cake1");
+        let fourthImage = document.getElementById("cake4");
+        let fifthImage = document.getElementById("cake5");
+        let sixthImage = document.getElementById("cake6");
+        firstImage.addEventListener("click", () => {
+            firstImage.style.display = "none";
+            fourthImage.style.display = "block";
+            fifthImage.style.display = "block";
+            sixthImage.style.display = "block";
+        });
+    </script>
+</body>
+</html>
